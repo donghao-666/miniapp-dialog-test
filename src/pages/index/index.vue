@@ -25,7 +25,7 @@ export default {
     const handleClick = () => {
       showDialog({
         title: '这是函数式调用的dialog组件',
-        content: '这是内容',
+        content: '这是内容<h1 style="color: red">Wallace is way taller than other reporters.</h1>',
         parentClassName: 'index',
         confirm: () => {
           console.log('外层点击确认')

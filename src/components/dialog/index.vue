@@ -1,7 +1,7 @@
 <template>
-  <view v-show="showPopup">
+  <view v-if="showPopup">
     <view>title: {{title}}</view>
-    <view>contnet: {{content}}</view>
+    <view v-html="content"></view>
     <button @tap="handleConfirm">确定</button>
     <button @tap="handleCancel">取消</button>
   </view>
